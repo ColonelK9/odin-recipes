@@ -1,0 +1,46 @@
+html{
+    background-color:#f0cc9e;
+}
+
+.links:hover
+.source:hover {
+    background: #ff0808;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+.source,
+#recipe {
+    text-align: center;
+    color: black;
+}
+
+.description {
+    text-align: center;
+}
+
+li {
+    font-family: Verdana, 'Arial Narrow', Arial, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    width: 678px;
+    height: auto;
+}
