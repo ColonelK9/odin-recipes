@@ -2,50 +2,238 @@ html{
     background-color:#f0cc9e;
 }
 
-.links:hover
-.source:hover {
-    background: #ff0808;
+body {
+    padding: 5px;
+    margin:0;
 }
-
 
 a {
     outline: none;
+    color: black;
+    text-decoration: none;
+}
+
+.home {
+    margin-top: 5px;
+    outline: none;
+    width: 97%;
+    text-decoration: none;
+    display: flex;
+    padding: 0.5em 0.5em 0.5em;
+    background: transparent;
+    list-style: none;
+}
+
+.home li {
+    outline-color: transparent;
     text-decoration: none;
     color: black;
 }
 
-.source,
-#recipe {
+.home li:nth-of-type():hover {
+    color: rgb(0, 205, 219); 
+}
+
+.home li:nth-of-type():active {
+    color:crimson;
+}
+
+.home li:nth-of-type(1) {
+    background:rgb(211, 150, 70);
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: rgb(165, 104, 35);
+    padding: 0.5em .7em;
+}
+
+.home li:nth-of-type(2) {
+    margin-left: auto;
+    font-size: .5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+    border: 3px groove rgb(238, 137, 79);
+    border-radius: 1.5px;
+    padding: 9px;
+    background:rgba(107, 220, 228, 0.705);
+}
+
+h1.title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    border: 20px groove rgba(128, 2, 139, 0.7);
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    width: 30%;
+    color: brown;
     text-align: center;
-    color: black;
 }
-
-.description {
-    text-align: center;
-}
-
-li {
-    font-family: Verdana, 'Arial Narrow', Arial, sans-serif;
-}
-
-
-h1 {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-h3 {
-    font-family: 'Courier New', Courier, monospace;
-}
-
 
 img {
     display: block;
     margin: auto;
-    width: 678px;
+    width: 45%;
     height: auto;
+    border: 3px solid black;
+}
+
+.description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    text-align: center;
+    border: 10px solid darkred;
+    border-top: 10px double rgba(0, 0, 0, 0.76);
+    padding: 10px;
+    padding-top: auto;
+    width: 80%;
+    background-color: rgba(202, 240, 142, 0.719);
+    height: auto;
+    border-radius: 30px
+}
+
+.description h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: center;
+    background-color:goldenrod;
+    color: white;
+    font-family: 'sans serif';
+    font-size: 24px;
+    border-bottom:5px solid rgb(0, 205, 219);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 200px;
+}
+
+.description em {
+    margin-bottom: 20px;   
+}
+
+.description em span {
+    display: inline-block;
+    background: black;
+    color: yellow;
+    font-family: Arial;
+    border-bottom: 5px solid rgb(8, 205, 219);
+    width: 200px;
+}   
+
+.ingredients {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background-color:rgb(238, 137, 79);
+    border: 6px double gray;
+    padding: 10px;
+    padding-top: 1px;
+}
+
+.ingredients h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background: darkcyan;
+    border: transparent;
+    border-radius: 7px;
+    width: 30%;
+}
+
+.ingredients li {
+    margin-top: 5px;
+    border: 3px dotted rgba(128, 2, 139, 0.5);
+    width: 75%;
+    font-family: Verdana, 'Arial Narrow', Arial, sans-serif;
+}
+
+.parent {
+    margin-top: 100px;
+    width: 97%;
+    display: flex;
+    list-style: none;
+}
+
+.steps {
+    background-color: rgba(255, 0, 34, 0.822);
+    padding: 1px 30px;
+    width: 45%;
+    height: auto;
+    border: 45px outset rgba(255, 166, 0, 0.712);
+}
+
+.steps h3{
+    margin-left: 150px;
+    font-family: Helvetica;
+    background-color: white;
+    width: 10%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding-left: 10px;
+}
+.steps ol {
+    margin-left:auto;
+    margin-right: auto;
+    list-style: numeric;
+    list-style-type: upper-roman;
+    background-color:burlywood;
+    border-radius: 30px;
+    height: auto;
+ }
+
+ .steps li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Arial Narrow';
+    padding: 4px;
+    border: 4px dashed rgb(56, 56, 56);
+    width: 94%;
+ }
+
+
+.nutri {
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 15%;
+    background-color: white;
+    padding: 10px;
+    border: 5px solid rgb(112, 0, 0);
+    border-radius: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.nutri h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    
+}
+
+.nutri ul {
+    margin: 5px;
+    margin-top: 15px;
+    padding-left: 30px;
+    list-style: none;
+    border: 5px inset rgb(128, 2, 139,4);
 }
 
 p.notes {
-    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 70%;
+    border: 2.5px solid brown;
+    background: burlywood;
+    color:rgb(0, 0, 0)
 }
